@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="banner">
+    <div class="banner-content">
+      Avec le confinement, promotion de 50% sur l'ensemble des plats. Profitez
+      de l'offre et soutenez-nous. Le paiement en ligne est disponible, merci
+      aux étudiants de WIS pour le développement de notre site Wad Restaurant
+    </div>
+  </div>
+  <div id="header" class="header">
+    <img src="assets/images/japan_logo.png" class="logo" width="50px" height="50px">
+    <div class="title">
+      <h3>Wad Sushis</h3>
+      <span>Les meilleurs sushis de Lille</span>
+    </div>
+  </div>
+  <div class="recette-content">
+  <app-card-recette *ngFor="let recette of carte" [image]="recette.image" [title]="recette.title" [description]="recette.description"></app-card-recette>
+  </div>
+</div>
+<router-outlet></router-outlet>
