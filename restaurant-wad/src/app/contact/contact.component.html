@@ -1,0 +1,7 @@
+<div class="container">
+    <input placeholder="Sujet" [(ngModel)]="sujet"/>
+    <label *ngIf="sujetError" class="error">{{sujetError}}</label>
+    <textarea style="height: 500px;" placeholder="Votre requête..." [(ngModel)]="request"></textarea>
+    <label *ngIf="requestError" class="error">{{requestError}}</label>
+    <button (click)="sendContact()">Envoyer</button>
+</div>

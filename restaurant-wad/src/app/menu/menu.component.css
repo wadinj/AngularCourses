@@ -5,26 +5,21 @@
   width: 100%;
   overflow-x: hidden;
 }
-
 .header {
   display: flex;
   background-color: #990033;
   height: 5rem;
-  justify-content: space-between;
 }
-
 .title {
   margin-left: 1em;
   color: white;
   align-self: center;
   margin-top: 1em;
 }
-
 .title h3 {
   margin-bottom: 0.2em;
   margin-top: 0;
 }
-
 .banner {
   height: 3em;
   background-color: black;
@@ -34,7 +29,6 @@
   overflow: hidden;
   line-height: 3em;
 }
-
 .banner-content {
   animation: scrolling-left 25s infinite;
   animation-timing-function: linear;
@@ -48,7 +42,6 @@
     transform: translateX(-100%);
   }
 }
-
 @keyframes scrolling-left {
   0% {
     transform: translateX(100%);
@@ -57,26 +50,13 @@
     transform: translateX(-100%);
   }
 }
-
 .logo {
   border-radius: 15px;
   border: 2px solid black;
   margin-left: 1em;
   align-self: center;
 }
-
 .recette-content {
   display: flex;
   justify-content: center;
-}
-
-.menu-link {
-  color: white;
-  align-self: center;
-  margin-right: 10px;
-  cursor: pointer;
-}
-.menu-link:hover {
-  color: black;
-  text-decoration: underline;
 }

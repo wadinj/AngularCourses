@@ -1,0 +1,12 @@
+<div class="container">
+  <form style="display: flex; flex-direction: column;" [formGroup]="contactForm" (ngSubmit)="sendContact()">
+    <input placeholder="Sujet" [formControl]="sujetFormControl"/>
+    <label *ngIf="sujetFormControl.touched && sujetFormControl.hasError('required')" class="error">Le sujet est
+      obligatoire</label>
+    <textarea style="height: 500px;" placeholder="Votre requête..." [formControl]="requestFormControl"></textarea>
+    <label *ngIf="requestFormControl.touched && requestFormControl.hasError('required')" class="error">La requete est
+      obligatoire</label>
+    <button type="submit">Envoyer</button>
+  </form>
+
+</div>
