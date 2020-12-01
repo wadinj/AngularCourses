@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent {
   title = 'restaurant-wad';
+  nomUser = 'Jonathan';
   carte = [
     {
       image: 'assets/images/sushi-1.jpg',
@@ -44,4 +45,10 @@ export class MenuComponent {
       description: 'Fromage, saumon, saumon mi-cuit,'
     }
   ];
+  selectedPlate: string;
+  payment: boolean;
+
+  pictureClick(title: string) {
+    this.selectedPlate = title;
+  }
 }

@@ -27,5 +27,6 @@ export class ContactComponent implements OnInit {
       this.requestError = 'La requête est obligatoire';
       return;
     }
+    // On peut appeler un service HTTP
   }
 }

@@ -8,6 +8,7 @@ import { ContactComponent } from './contact/contact.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { MenuComponent } from './menu/menu.component';
 import { Contact2Component } from './contact2/contact2.component';
+import { PaymentComponent } from './payment/payment.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { Contact2Component } from './contact2/contact2.component';
     CardRecetteComponent,
     ContactComponent,
     MenuComponent,
-    Contact2Component
+    Contact2Component,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,
