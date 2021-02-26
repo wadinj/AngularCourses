@@ -3,7 +3,7 @@
   <h4 *ngIf="selectedPlate" style="margin-top: 10px;">Plat sélectionnée : {{selectedPlate}}</h4>
   <div class="recette-content">
     <app-card-recette *ngFor="let recette of carte" [image]="recette.image"
-      (onPictureClick)="pictureClick(recette.title)" [title]="recette.title" [description]="recette.description"></app-card-recette>
+      (onPictureClick)="pictureClick(recette.title)" [imageId]="recette.imageId" [title]="recette.title" [description]="recette.description"></app-card-recette>
   </div>
   <app-payment [userName]="nomUser" (onPayment)="payment = true"></app-payment>
 

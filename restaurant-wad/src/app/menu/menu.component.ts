@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Carte } from '../model';
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
@@ -8,43 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class MenuComponent {
   title = 'restaurant-wad';
   nomUser = 'Jonathan';
-  carte = [
-    {
-      image: 'assets/images/sushi-1.jpg',
-      title: 'Spider Rolls',
-      description: 'Crabe, avocat, tobiko, mangue, mayonnaise'
-    },
-    {
-      image: 'assets/images/sushi-2.jpg',
-      title: 'Katamina Rolls',
-      description: 'Saumon, avocat, tobiko'
-    },
-    {
-      image: 'assets/images/sushi-3.jpg',
-      title: 'Sushi Bowl',
-      description: 'Saumon, wasabi, gingembre'
-    },
-    {
-      image: 'assets/images/sushi-4.jpg',
-      title: 'Sushi Plate',
-      description: 'Saumon, avocat, sésame'
-    },
-    {
-      image: 'assets/images/sushi-5.jpg',
-      title: 'Sesame Rolls',
-      description: 'Sésame, concombre, avocat, saumon'
-    },
-    {
-      image: 'assets/images/sushi-6.jpeg',
-      title: 'California Rolls',
-      description: 'Saumont, avocat'
-    },
-    {
-      image: 'assets/images/sushi-7.jpg',
-      title: 'Cheese Roll',
-      description: 'Fromage, saumon, saumon mi-cuit,'
-    }
-  ];
+  carte = Carte;
   selectedPlate: string;
   payment: boolean;
 
